@@ -1,0 +1,1 @@
+const f=document.getElementById('f'),i=document.getElementById('img'),s=document.getElementById('s');f.onchange=e=>{let file=e.target.files[0];if(!file)return;i.src=URL.createObjectURL(file);i.style.display='block';s.textContent='Screenshot geladen.'};document.getElementById('a').onclick=()=>s.textContent='Analyse volgt in versie 0.2';
